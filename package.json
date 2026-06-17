@@ -1,0 +1,25 @@
+{
+  "name": "techminds-stem-platform",
+  "version": "1.0.0",
+  "description": "TechMinds - Robotics, Coding, AI & STEM Education Platform for Schools",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend"
+  },
+  "keywords": [
+    "stem",
+    "robotics",
+    "education",
+    "coding",
+    "ai",
+    "school"
+  ],
+  "author": "TechMinds",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
