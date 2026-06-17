@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BarChart3, BookOpen, Users, School, Award, Image, MessageSquare, FileText, Settings, LogOut, Plus, Trash2, Edit, X, Eye, Clock, CheckCircle2, AlertCircle } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
 
-const API_BASE = '/api';
+const API_BASE = 'https://techminds-backend.onrender.com/api';
 
 function AdminDashboard() {
   const [token, setToken] = useState(() => localStorage.getItem('admin_token') || '');

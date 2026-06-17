@@ -7,7 +7,7 @@ function TeacherTraining() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/api/training')
+    fetch('https://techminds-backend.onrender.com/api/training')
       .then(res => res.json())
       .then(data => { setTrainings(data); setLoading(false); })
       .catch(err => { console.error(err); setLoading(false); });

@@ -25,17 +25,17 @@ function Home() {
 
   useEffect(() => {
     // Fetch data from api
-    fetch('/api/courses')
+    fetch('https://techminds-backend.onrender.com/api/courses')
       .then(res => res.json())
       .then(data => setCourses(data))
       .catch(e => console.log('Err fetching courses:', e));
 
-    fetch('/api/testimonials')
+    fetch('https://techminds-backend.onrender.com/api/testimonials')
       .then(res => res.json())
       .then(data => setTestimonials(data))
       .catch(e => console.log('Err fetching testimonials:', e));
 
-    fetch('/api/schools')
+    fetch('https://techminds-backend.onrender.com/api/schools')
       .then(res => res.json())
       .then(data => setSchools(data))
       .catch(e => console.log('Err fetching schools:', e));
@@ -81,7 +81,7 @@ function Home() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch('/api/queries', {
+      const response = await fetch('https://techminds-backend.onrender.com/api/queries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

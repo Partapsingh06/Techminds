@@ -17,7 +17,7 @@ function ContactUs() {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch('/api/queries', {
+      const res = await fetch('https://techminds-backend.onrender.com/api/queries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

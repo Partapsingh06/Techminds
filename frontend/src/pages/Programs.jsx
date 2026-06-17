@@ -19,7 +19,7 @@ function Programs() {
   const [selectedFilter, setSelectedFilter] = useState('All');
 
   useEffect(() => {
-    fetch('/api/courses')
+    fetch('https://techminds-backend.onrender.com/api/courses')
       .then(res => res.json())
       .then(data => {
         setCourses(data);
